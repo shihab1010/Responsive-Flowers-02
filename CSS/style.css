@@ -1,74 +1,140 @@
-
 .noto-serif-primary-font {
   font-family: "Noto Serif", serif;
   font-optical-sizing: auto;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+  font-variation-settings: "wdth" 100;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
 }
 
 /* shared styles */
-.margin-auto{
-    max-width: 1140px;
-    margin: 0 auto;
+.button-primary {
+  border: none;
+  color: white;
+  font-weight: bold;
+  background-color: #e95a08;
+  padding: 15px 25px;
+  cursor: pointer;
 }
-.section-heading{
-    font-size: 3.12rem;
-    font-weight: bold;
+
+.margin-auto {
+  max-width: 1140px;
+  margin: 0 auto;
 }
-.section-description{
-    color: rgba(0, 0, 0, 0.5);
-    font-size: 1.38rem;
-    
+.section-heading {
+  font-size: 3.12rem;
+  font-weight: bold;
 }
-.dis-flex{
-    display: flex;
+.section-description {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.38rem;
+}
+.dis-flex {
+  display: flex;
+}
+.primary-color {
+  color: #e95a08;
 }
 
 /* Plant lover section style */
-.plant-lover-container{
-   align-items: center;
-   justify-content: space-between;
+.plant-lover-container {
+  align-items: center;
+  justify-content: space-between;
 }
-.plant-lover{
-    max-height: 597px;
+.plant-lover {
+  max-height: auto;
 }
-.plant-lover-list li{
-    margin-top: 20px;
+.plant-lover-list li {
+  margin-top: 20px;
 }
-.plant-lover-img{
-    max-width: 540px;
+.plant-lover-img {
+  max-width: 540px;
 }
-.plant-lover-img img{
-    width: 100%;
+.plant-lover-img img {
+  width: 100%;
 }
-.plant-lover-heading{
-    margin: 0;
+.plant-lover-heading {
+  margin: 0;
 }
 
-.plant-lover-details{
-    max-width: 540px;
-    margin: 38px 0;
-    
+.plant-lover-details {
+  max-width: 540px;
+  margin: 38px 0;
 }
 /* add badge */
-.badge{
-    width: 286px;
-    height: 286px;
-    background: transparent;
-    position: relative;
-    left: 350px;
-    top: 200px;
+.badge {
+  width: 286px;
+  height: 286px;
+  background: transparent;
+  position: relative;
+  left: 350px;
+  top: 200px;
+}
+
+/* deals section */
+.deals {
+  margin-top: 134px;
+  margin-bottom: 0;
+}
+.deals-heading {
+  margin: 0;
+}
+.deal-description {
+  margin-top: 16px;
+}
+.deals-details {
+  text-align: center;
+}
+.deals-details div {
+  max-width: 888px;
+  margin: 0 auto;
+}
+
+.discount-img-align {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Join Section */
+
+.join {
+  background-image: url("../assets/news-letter-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  padding: 100px 20px;
+  color: white;
+  margin-top: 120px;
+}
+.join-box {
+  max-width: 830px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.join-box input {
+  padding: 15px;
+  border: none;
+  flex: 1;
+}
+.join-heading {
+  margin-bottom: 25px;
 }
 
 /* Responsive design for mobile device */
-@media screen and (max-width:576px) {
-    .plant-lover-container{
-        flex-direction: column;
-    }
-    .badge{
-        display: none;
-    }
-   
-    
+@media screen and (max-width: 576px) {
+  .plant-lover-container {
+    flex-direction: column;
+  }
+  .badge {
+    display: none;
+  }
+  .join {
+    overflow-x: hidden;
+  }
 }
