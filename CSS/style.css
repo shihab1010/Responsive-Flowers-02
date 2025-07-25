@@ -21,6 +21,12 @@
   padding: 15px 25px;
   cursor: pointer;
 }
+/* button hover effect */
+.button-primary:hover {
+  background-color: darkslateblue;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
 
 .margin-auto {
   max-width: 1140px;
@@ -68,6 +74,44 @@
 .banner-content {
   padding-top: 80px;
 }
+/* card section */
+.our-plant-content {
+  text-align: center;
+}
+.each-card {
+  max-width: 270px;
+}
+.line-1 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 20px;
+}
+.line-2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+}
+.card-button {
+  margin-top: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.card-button button {
+  flex: 1;
+}
+.each-card img {
+  width: 100%;
+}
+.card-section {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 30px;
+  column-gap: 20px;
+}
 
 /* Plant lover section style */
 .plant-lover-container {
@@ -76,6 +120,7 @@
 }
 .plant-lover {
   max-height: auto;
+  margin-top: 80px;
 }
 .plant-lover-list li {
   margin-top: 20px;
@@ -96,6 +141,7 @@
 }
 /* add badge */
 .badge {
+  margin: 0;
   width: 286px;
   height: 286px;
   background: transparent;
@@ -106,7 +152,7 @@
 
 /* deals section */
 .deals {
-  margin-top: 134px;
+  margin-top: 120px;
   margin-bottom: 0;
 }
 .deals-heading {
@@ -252,6 +298,7 @@
   margin: 0;
   margin-left: 25px;
 }
+
 /* Responsive design for mobile device */
 @media screen and (max-width: 576px) {
   .plant-lover-container,
@@ -296,5 +343,19 @@
   }
   .banner-img img {
     width: 100%;
+  }
+  .banner-content,
+  .plant-lover,
+  .deal-img {
+    margin: 0 10px;
+  }
+  .plant-lover,
+  .deal-img,
+  .deals {
+    margin-top: 50px;
+  }
+  .card-section {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 10px;
   }
 }
