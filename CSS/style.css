@@ -59,6 +59,21 @@
   color: #8987a1;
 }
 
+/* Banner */
+.banner {
+  margin-top: 120px;
+  margin-bottom: 100px;
+}
+.banner-img {
+  max-width: 570px;
+}
+.banner-img img {
+  width: 100%;
+}
+.banner-content {
+  padding-top: 80px;
+}
+
 /* Plant lover section style */
 .plant-lover-container {
   align-items: center;
@@ -277,5 +292,8 @@
   }
   .nav-bar {
     padding: 0 10px;
+  }
+  .banner {
+    flex-direction: column-reverse;
   }
 }
