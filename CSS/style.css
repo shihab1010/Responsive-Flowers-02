@@ -10,6 +10,9 @@
 }
 
 /* shared styles */
+.flex {
+  display: flex;
+}
 .button-primary {
   border: none;
   color: white;
@@ -36,6 +39,24 @@
 }
 .primary-color {
   color: #e95a08;
+}
+/* Nav bar */
+.nav-bar {
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.nav-bar ul li {
+  list-style: none;
+}
+.nav-bar a {
+  text-decoration: none;
+  margin: 0;
+  margin-left: 48px;
+  color: black;
+}
+.menu-color {
+  color: #8987a1;
 }
 
 /* Plant lover section style */
@@ -250,5 +271,11 @@
   .right {
     height: 200px;
     flex: none;
+  }
+  .home-menu {
+    display: none;
+  }
+  .nav-bar {
+    padding: 0 10px;
   }
 }
