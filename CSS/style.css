@@ -64,12 +64,7 @@
   margin-top: 120px;
   margin-bottom: 100px;
 }
-.banner-img {
-  max-width: 570px;
-}
-.banner-img img {
-  width: 100%;
-}
+
 .banner-content {
   padding-top: 80px;
 }
@@ -295,5 +290,11 @@
   }
   .banner {
     flex-direction: column-reverse;
+  }
+  .banner-img {
+    max-width: 570px;
+  }
+  .banner-img img {
+    width: 100%;
   }
 }
